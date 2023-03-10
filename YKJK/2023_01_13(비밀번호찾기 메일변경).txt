@@ -1,0 +1,22 @@
+https://m.blog.naver.com/jny9708/221773002779
+
+비밀번호 찾기 시 발송되는 메일 변경.
+
+<!-- Google Mail -->
+	<!-- org.springframework.mail.javamail.JavaMailSenderImpl -->
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl"> 
+		<property name="host" value="smtp.gmail.com"/> 
+		<property name="port" value="587" /> 
+		<property name="username" value="helpykjk@gmail.com"/> 
+		<property name="password" value="ixvdejyhbysviurw"/> 
+		<property name="javaMailProperties"> 
+			<props> 
+				<prop key="mail.smtp.auth">true</prop> 
+				<prop key="mail.smtp.starttls.enable">true</prop>
+			</props> 
+		</property> 
+	</bean>
+
+password 는 google 2차 비밀번호설정한 " 앱 " 비밀번호 임
+
+데이터베이스 변경하여 브랜드 명도 변경
